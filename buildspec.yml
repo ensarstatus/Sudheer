@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+        python: 3.7
+  build:
+    commands:
+      - pip install --upgrade pip
+      - pip install pipenv --user
+      - pip install awscli aws-sam-cli
+      - pipenv run sam package --template-file samtemplate.yml --s3-bucket codepipeline
+artifacts:
+   files:
+     - samtemplate.yml
+     - outputsamtemplate.yml  
+
