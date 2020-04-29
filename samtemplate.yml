@@ -11,12 +11,12 @@ Resources:
       Description: ''
       MemorySize: 128
       Timeout: 30
-      Role: 'arn:aws:iam::332167152351:role/device-data-role'
+      Role: 'arn:aws:iam::332167152351:role/cloud-fromation-service-role'
       Events:
         Api1:
           Type: Api
           Properties:
-            Path: '/noncritical-errorlogs/{id}'
+            Path: '/CDDemoLambda-errorlogs/{id}'
             Method: GET
       Environment:
         Variables:
