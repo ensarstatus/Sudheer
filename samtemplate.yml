@@ -20,9 +20,4 @@ Resources:
             Method: GET
       Environment:
         Variables:
-          REGION:us-east-2  
-          dbparam: siteiq_database_dev
-          dbpasswordparam: siteiq_dbpassword_dev
-          dbusernameparam: siteiq_dbusername_dev
-          rdshostparam: siteiq_rdshost_dev
-        
+          REGION:us-east-2
