@@ -20,4 +20,4 @@ Resources:
             Method: GET
       Environment:
         Variables:
-          REGION:us-east-2
+          - REGION:us-east-2
