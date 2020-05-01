@@ -8,7 +8,7 @@ phases:
       - pip install --upgrade pip
       - pip install pipenv --user
       - pipenv install awscli aws-sam-cli
-      - pipenv aws cloudformation package --template-file samtemplate.yml --s3-bucket codepipelinelambda --output-template-file outputsamtemplate.yml  
+      - aws cloudformation package --template-file samtemplate.yml --s3-bucket codepipelinelambda --output-template-file outputsamtemplate.yml  
 artifacts:
    files:
      - samtemplate.yml
