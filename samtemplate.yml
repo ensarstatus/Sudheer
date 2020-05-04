@@ -16,6 +16,12 @@ Resources:
         Api1:
           Type: Api
           Properties:
-            Path: /getazs   
+            Path:  '/CDDemoLambda/{id}' 
             Method: GET
+      Environment:
+        Variables:
+          dbparam: siteiq_database_dev
+          dbpasswordparam: siteiq_dbpassword_dev
+          dbusernameparam: siteiq_dbusername_dev
+          rdshostparam: siteiq_rdshost_dev
     
