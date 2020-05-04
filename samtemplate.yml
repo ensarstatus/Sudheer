@@ -24,4 +24,6 @@ Resources:
           dbpasswordparam: siteiq_dbpassword_dev
           dbusernameparam: siteiq_dbusername_dev
           rdshostparam: siteiq_rdshost_dev
-    
+      Layers:
+        - 'arn:aws:lambda:us-east-2:332167152351:layer:pymysql:2'
+        - 'arn:aws:lambda:us-east-2:332167152351:layer:crypto:1'
